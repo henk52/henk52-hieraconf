@@ -52,3 +52,5 @@ file { '/etc/puppet/hiera.yaml':
   require => File [ '/etc/puppet/data' ],
   content => template ('hieraconf/hiera_yaml.erb'),
 }
+
+}
