@@ -49,7 +49,7 @@ file { '/etc/puppet/data':
 
 file { '/etc/puppet/hiera.yaml':
   ensure  => present,
-  require => File [ '/etc/puppet/data' ],
+  require => File[ '/etc/puppet/data' ],
   content => template ('hieraconf/hiera_yaml.erb'),
 }
 
